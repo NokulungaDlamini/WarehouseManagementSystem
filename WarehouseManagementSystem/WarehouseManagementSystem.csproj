@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E6A5AB0-AB11-472D-9052-3C57F1A01F82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WarehouseManagementSystem</RootNamespace>
+    <AssemblyName>WarehouseManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add\Add Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add Categories.Designer.cs">
+      <DependentUpon>Add Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Add Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add Products.Designer.cs">
+      <DependentUpon>Add Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Add Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add Suppliers.Designer.cs">
+      <DependentUpon>Add Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete\Delete Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete\Delete Category.Designer.cs">
+      <DependentUpon>Delete Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete\Delete Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete\Delete Product.Designer.cs">
+      <DependentUpon>Delete Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete\Delete Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete\Delete Supplier.Designer.cs">
+      <DependentUpon>Delete Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Edit Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Edit Categories.Designer.cs">
+      <DependentUpon>Edit Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Edit Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Edit Products.Designer.cs">
+      <DependentUpon>Edit Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Edit Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Edit Suppliers.Designer.cs">
+      <DependentUpon>Edit Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ManagerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\ManagerLogin.Designer.cs">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Controls\UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Controls\UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Controls\UC_ManageCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Controls\UC_ManageCategories.Designer.cs">
+      <DependentUpon>UC_ManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Controls\UC_ManageProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Controls\UC_ManageProducts.Designer.cs">
+      <DependentUpon>UC_ManageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Controls\UC_ManageSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Controls\UC_ManageSuppliers.Designer.cs">
+      <DependentUpon>UC_ManageSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add\Add Categories.resx">
+      <DependentUpon>Add Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Add Products.resx">
+      <DependentUpon>Add Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Add Suppliers.resx">
+      <DependentUpon>Add Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete\Delete Category.resx">
+      <DependentUpon>Delete Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete\Delete Product.resx">
+      <DependentUpon>Delete Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete\Delete Supplier.resx">
+      <DependentUpon>Delete Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Edit Categories.resx">
+      <DependentUpon>Edit Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Edit Products.resx">
+      <DependentUpon>Edit Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Edit Suppliers.resx">
+      <DependentUpon>Edit Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Controls\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Controls\UC_ManageCategories.resx">
+      <DependentUpon>UC_ManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Controls\UC_ManageProducts.resx">
+      <DependentUpon>UC_ManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Controls\UC_ManageSuppliers.resx">
+      <DependentUpon>UC_ManageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Warehouse.Business\Warehouse.Business.csproj">
+      <Project>{d8fef694-c6a0-4877-a449-a175387a2a65}</Project>
+      <Name>Warehouse.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Warehouse.Entity\Warehouse.Entity.csproj">
+      <Project>{1e1637cc-083b-48c8-8108-88ba3b6f8815}</Project>
+      <Name>Warehouse.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Home Wallpaper.jpg" />
+    <Content Include="Resources\Hulamin Logo.jpg" />
+    <Content Include="Resources\icons8-add-shopping-cart-50.png" />
+    <Content Include="Resources\icons8-arrow-64.png" />
+    <Content Include="Resources\icons8-categorize-16.png" />
+    <Content Include="Resources\icons8-category-16 new.png" />
+    <Content Include="Resources\icons8-category-48 new.png" />
+    <Content Include="Resources\icons8-category-50.png" />
+    <Content Include="Resources\icons8-close-32.png" />
+    <Content Include="Resources\icons8-conference-26.png" />
+    <Content Include="Resources\icons8-eye-16.png" />
+    <Content Include="Resources\icons8-home new.gif" />
+    <Content Include="Resources\icons8-home-page-16.png" />
+    <Content Include="Resources\icons8-home-page-50.png" />
+    <Content Include="Resources\icons8-less-than-32.png" />
+    <Content Include="Resources\icons8-lock-26.png" />
+    <Content Include="Resources\icons8-logout-16.png" />
+    <Content Include="Resources\icons8-maximize-window-16.png" />
+    <Content Include="Resources\icons8-more-than-26.png" />
+    <Content Include="Resources\icons8-pie-chart-24.png" />
+    <Content Include="Resources\icons8-plus-math-16.png" />
+    <Content Include="Resources\icons8-product new.gif" />
+    <Content Include="Resources\icons8-sale-32.png" />
+    <Content Include="Resources\icons8-search-16.png" />
+    <Content Include="Resources\icons8-search.gif" />
+    <Content Include="Resources\icons8-shutdown-40.png" />
+    <Content Include="Resources\icons8-subtract-16.png" />
+    <Content Include="Resources\icons8-supplier-48 new.png" />
+    <Content Include="Resources\icons8-supplier-50.png" />
+    <Content Include="Resources\icons8-supplier-64 new.png" />
+    <Content Include="Resources\icons8-supplier-64.png" />
+    <Content Include="Resources\icons8-transaction-32.png" />
+    <Content Include="Resources\icons8-transaction-50.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\shutdown-53 new.png" />
+    <Content Include="Resources\shutdown-53.png" />
+    <Content Include="Resources\warehouse Logo.png" />
+    <Content Include="Resources\warehouse wallpaper.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
